@@ -3,8 +3,8 @@ var endTime = 17
 timeSlots = $(".container");
 
 for(i = startTime; i < endTime; i++) {
-    newHour = $("<div>");
-    newHour.addClass("row");
+    // newHour = $("<div>");
+    // newHour.addClass("row");
 
     hour = $("<div>");
     hour.addClass("col-2 hour");
@@ -36,8 +36,8 @@ for(i = startTime; i < endTime; i++) {
     "5 pm"
  ]
  for (var i=0; i < Array.length; i++) {
-    document.body.header.div.append(hourArray);
-    //  console.log(hourArray)
+    // document.body.div.append(hourArray);
+     console.log(hourArray)
  }
 // function display(hourArray ) {
 //     for var

@@ -51,15 +51,13 @@
 
     <script>
       const curDay = document.querySelector(".currentDay");
-      
       function updateTime(){
         const now = moment();
-        const date = now.format("dddd, MMMM Do YYYY");
+        const date = now.format("dddd MMM Mo YYYY");
 
         currentDay.textContent = date;
       }
-      setInterval (updateTime , 1000)
-      updateTime();
+      setInterval ( , 1000)
   
     
     </script>

@@ -36,7 +36,7 @@ for(i = startTime; i < endTime; i++) {
     "5 pm"
  ]
  for (var i=0; i < Array.length; i++) {
-    document.body.header.div.append(hourArray);
+    document.body.header.divappend(hourArray);
     //  console.log(hourArray)
  }
 // function display(hourArray ) {

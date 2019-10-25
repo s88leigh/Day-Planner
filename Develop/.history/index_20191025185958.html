@@ -28,7 +28,7 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead">8:00</p>
+      <p id="currentDay" class="lead">8</p>
     </header>
     <div class="container">
       <!-- Timeblocks go here -->
@@ -50,18 +50,9 @@
      
 
     <script>
-      const curDay = document.querySelector(".currentDay");
-      
-      function updateTime(){
-        const now = moment();
-        const date = now.format("dddd, MMMM Do YYYY");
+      const m = moment();
 
-        currentDay.textContent = date;
-      }
-      setInterval (updateTime , 1000)
-      updateTime();
-  
-    
+      console.log(m.format ("dddd MMM Mo YYYY"));
     </script>
 
     
