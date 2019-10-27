@@ -10,7 +10,7 @@ for(i = startTime; i < endTime; i++) {
     hour.addClass("col-2 hour");
     hour.text(i);
 
-    dailyTask = $("<textarea>");
+    dailyTask = $("<input>");
     dailyTask.addClass("col-8");
     dailyTask.addClass("future");
    
@@ -32,11 +32,10 @@ $(".saveBtn").on("click", function(){
   console.log("clicked save button");
     });
 
-    var 
-
-    localStorage.setItem("mytime", Date.now());
-
-
+$("input").on("change", function(event) {
+    event.preventDefault();
+    console.log("Daily Task");
+})
 
     
     // localStorage.setItem("dailyTask", dailyTaskInput);

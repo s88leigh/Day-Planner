@@ -32,7 +32,7 @@ $(".saveBtn").on("click", function(){
   console.log("clicked save button");
     });
 
-    var 
+    
 
     localStorage.setItem("mytime", Date.now());
 

@@ -10,19 +10,22 @@ for(i = startTime; i < endTime; i++) {
     hour.addClass("col-2 hour");
     hour.text(i);
 
-    dailyTask = $("<textarea>");
+    dailyTask = $("<input>");
     dailyTask.addClass("col-8");
     dailyTask.addClass("future");
    
-    saveButton = $("<button>");
+    saveButton = $("<input>");
     saveButton.addClass("col-2 saveBtn");
     saveButton.addClass("saveBtn i:hover");
-    saveButton.text("save");
     
     newHour.append(hour, dailyTask, saveButton);
     timeSlots.append(newHour);
  }
- 
+ y.length; i++) {
+
+hour.append(hourArray);
+    //  console.log(hourArray)
+ }
 
 var saveButton = $(".saveBtn");
 var dailyTask = $("input");
@@ -32,11 +35,10 @@ $(".saveBtn").on("click", function(){
   console.log("clicked save button");
     });
 
-    var 
-
-    localStorage.setItem("mytime", Date.now());
-
-
+$("input").on("change", function(event) {
+    event.preventDefault();
+    console.log("Daily Task");
+})
 
     
     // localStorage.setItem("dailyTask", dailyTaskInput);

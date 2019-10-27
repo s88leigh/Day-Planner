@@ -32,11 +32,10 @@ $(".saveBtn").on("click", function(){
   console.log("clicked save button");
     });
 
-    var 
-
-    localStorage.setItem("mytime", Date.now());
-
-
+$("input").on("change", function(event) {
+    event.preventDefault();
+    console.log("Daily Task");
+})
 
     
     // localStorage.setItem("dailyTask", dailyTaskInput);
