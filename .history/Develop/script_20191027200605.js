@@ -46,7 +46,7 @@ for (i = startTime; i <= endTime; i++) {
 
   saveButton = $("<button>");
   saveButton.addClass("col-2 saveBtn");
-  saveButton.addClass(".hover");
+  saveButton.addClass("hover");
   saveButton.text("save");
 
   newRow.append(hour, dailyTask, saveButton);
@@ -61,6 +61,7 @@ $(".saveBtn").on("click", function(){
   
    localStorage.setItem("input", JSON.stringify(input));
  
+  console.log("clicked save button");
     });
 
     
