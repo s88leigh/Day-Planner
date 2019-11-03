@@ -23,13 +23,13 @@ for (i = startTime; i <= endTime; i++) {
   hour = $("<div>");
   hour.addClass("col-2 hour");
   Time1 = moment(i, "hA");
-  hour.text(Time1.format("hA"));
+  hour.text(Time1.format("hA"));color
 
 
   dailyTask = $("<textarea>");
   dailyTask.addClass("col-8");
   dailyTask.attr("id",i);
-  dailyTask.val(input)
+  dailyTask.val(input[i-startTime])
 
   Time2 = moment(i + 1, "hA");
   if (Time2 > now && now > Time1) {

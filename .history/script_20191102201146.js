@@ -29,7 +29,7 @@ for (i = startTime; i <= endTime; i++) {
   dailyTask = $("<textarea>");
   dailyTask.addClass("col-8");
   dailyTask.attr("id",i);
-  dailyTask.val(input)
+  dailyTask.val(input[i-startTime])
 
   Time2 = moment(i + 1, "hA");
   if (Time2 > now && now > Time1) {
@@ -59,7 +59,7 @@ $(".saveBtn").on("click", function(){
   var id =  $(this).siblings("textarea").attr("id");
   input[id - startTime] = $(this).siblings("textarea").val();
   
-   localStorage.setItem("input", JSON.stringify(input));
+   localStorage.setItem("input", JSON.stringify(input[id-startTime]));
  
     });
 
